@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-sac-bg: #F7F1E7;
+  --color-sac-card: #FFFFFF;
+  --color-sac-sand: #E5DCCE;
+  --color-sac-crimson: #8F2635;
+  --color-sac-crimson-dark: #701D29;
+  --color-sac-jade: #286B61;
+  --color-sac-jade-light: #3D8E82;
+  --color-sac-gold: #D5B477;
+  --color-sac-gold-light: #E8CE9B;
+  --color-sac-ink: #2C241E;
+  --color-sac-muted: #6C6258;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Cinzel", "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-sac-bg);
+    color: var(--color-sac-ink);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.dark body {
+    background-color: #141214;
+    color: #F7F1E7;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Editorial Textures & Silk Borders */
+.border-silk {
+  border-color: #E5DCCE;
+}
+html.dark .border-silk {
+  border-color: #383035;
+}
+
+.bg-rice-paper {
+  background-color: #F7F1E7;
+  background-image: radial-gradient(#E5DCCE 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+html.dark .bg-rice-paper {
+  background-color: #141214;
+  background-image: radial-gradient(#2A2227 0.85px, transparent 0.85px);
+  background-size: 16px 16px;
+}
+
+/* Dark mode ambient lacquer overrides for editorial cards */
+html.dark .bg-white {
+  background-color: #1F1B1E;
+}
+
+html.dark .bg-white\/90,
+html.dark .bg-white\/95 {
+  background-color: rgba(31, 27, 30, 0.94);
+}
+
+html.dark .border-\[\#E5DCCE\] {
+  border-color: #383136;
+}
+
+html.dark .text-\[\#2C241E\] {
+  color: #F7F1E7;
+}
+
+html.dark .text-\[\#6C6258\] {
+  color: #BDB2A7;
+}
+
+html.dark .bg-\[\#F7F1E7\] {
+  background-color: #181518;
+}
+
+html.dark .hover\:bg-\[\#F7F1E7\]:hover {
+  background-color: #262125;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  color-scheme: dark;
+}
+
+/* Custom Scrollbar for Magazine Style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F1E7;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #141214;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5B477;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8F2635;
+}

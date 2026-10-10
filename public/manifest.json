@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Sắc Lưu Niên - Mặc Di Sản Chất Riêng Mình",
+  "short_name": "Sắc Lưu Niên",
+  "description": "Nền tảng PWA phối trang phục truyền thống Việt Nam với Canvas SVG tương tác, WebAR ướm thử và Trợ lý AI Văn hóa.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F7F1E7",
+  "theme_color": "#8F2635",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "culture", "fashion"]
+}

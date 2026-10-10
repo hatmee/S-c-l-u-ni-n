@@ -1,0 +1,10 @@
+{
+  "name": "Sắc Lưu Niên - Nền tảng Phối Trang Phục Di Sản Việt",
+  "description": "Nền tảng PWA phối trang phục truyền thống Việt Nam kết hợp SVG Styling động, trợ lý AI thẩm định văn hóa và WebAR ướm thử.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

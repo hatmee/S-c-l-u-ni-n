@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A52D3E" />
+      <stop offset="100%" stop-color="#731926" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E7A9" />
+      <stop offset="50%" stop-color="#D5B477" />
+      <stop offset="100%" stop-color="#9E7D3F" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)" stroke="#D5B477" stroke-width="8"/>
+  <circle cx="256" cy="256" r="216" fill="none" stroke="#D5B477" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Traditional Lotus & Robe Motif -->
+  <g transform="translate(256, 256)" stroke="url(#goldGrad)" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Traditional Collar overlap (Lập lĩnh / Ngũ thân) -->
+    <path d="M-50 -120 L0 -50 L50 -120" stroke-width="8" />
+    <path d="M0 -50 L0 120" stroke-width="7" />
+    <!-- 5 Traditional Buttons (Ngũ khuy) dots -->
+    <circle cx="0" cy="-30" r="6" fill="#D5B477" />
+    <circle cx="0" cy="5" r="6" fill="#D5B477" />
+    <circle cx="0" cy="40" r="6" fill="#D5B477" />
+    <circle cx="0" cy="75" r="6" fill="#D5B477" />
+    <circle cx="0" cy="110" r="6" fill="#D5B477" />
+
+    <!-- Robe silhouette curves -->
+    <path d="M-110 130 C-90 40, -70 -60, -50 -120 C-20 -130, 20 -130, 50 -120 C70 -60, 90 40, 110 130 Z" stroke-width="5" />
+    
+    <!-- Traditional Cloud / Lotus petals flanking -->
+    <path d="M-130 -10 C-170 -40, -170 30, -110 50" />
+    <path d="M130 -10 C170 -40, 170 30, 110 50" />
+  </g>
+
+  <!-- Typography circular arch or subtle text -->
+  <text x="256" y="440" font-family="'Playfair Display', serif" font-size="28" fill="#F7E7A9" text-anchor="middle" letter-spacing="4" font-weight="600">SẮC LƯU NIÊN</text>
+</svg>
